@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Bootstrap Flexbox</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="mb-5">Flexbox</h1>
+
+    <!-- Basic Flexbox -->
+    <p class="h6">Flexbox Row</p>
+    <div class="d-flex">
+      <div class="text-bg-light p-3">Flex Item</div>
+      <div class="text-bg-light p-3">Flex Item</div>
+      <div class="text-bg-light p-3">Flex Item</div>
+      <div class="text-bg-light p-3">Flex Item</div>
+      <div class="text-bg-light p-3">Flex Item</div>
+      <div class="text-bg-light p-3">Flex Item</div>
+    </div>
+
+    <br><br>
+
+    <!-- Flex Column -->
+    <p class="h6">Flex Column</p>
+    <div class="d-flex flex-column">
+      <div class="text-bg-dark p-3">Flex Item</div>
+      <div class="text-bg-dark p-3">Flex Item</div>
+      <div class="text-bg-dark p-3">Flex Item</div>
+      <div class="text-bg-dark p-3">Flex Item</div>
+      <div class="text-bg-dark p-3">Flex Item</div>
+      <div class="text-bg-dark p-3">Flex Item</div>
+    </div>
+
+    <br><br>
+
+    <!-- Using Screen Sizes -->
+    <p class="h6">Basic Flexbox based on Screen Sizes</p>
+    <div class="d-flex flex-column flex-md-row">
+      <div class="text-bg-primary p-3">Flex Item</div>
+      <div class="text-bg-primary p-3">Flex Item</div>
+      <div class="text-bg-primary p-3">Flex Item</div>
+      <div class="text-bg-primary p-3">Flex Item</div>
+      <div class="text-bg-primary p-3">Flex Item</div>
+      <div class="text-bg-primary p-3">Flex Item</div>
+    </div>
+
+    <br><br>
+
+    <!-- Flex Wrap -->
+    <p class="h6">Flex Wrap</p>
+    <div class="d-flex flex-wrap">
+      <div class="text-bg-success p-3">Flex Item</div>
+      <div class="text-bg-success p-3">Flex Item</div>
+      <div class="text-bg-success p-3">Flex Item</div>
+      <div class="text-bg-success p-3">Flex Item</div>
+      <div class="text-bg-success p-3">Flex Item</div>
+      <div class="text-bg-success p-3">Flex Item</div>
+      <div class="text-bg-success p-3">Flex Item</div>
+    </div>
+
+    <br><br>
+
+    <!-- Justify Content -->
+    <p class="h6">Flexbox Justify Content</p>
+    <div class="d-flex justify-content-end">
+      <div class="text-bg-dark p-3">Flex Item</div>
+      <div class="text-bg-dark p-3">Flex Item</div>
+      <div class="text-bg-dark p-3">Flex Item</div>
+    </div>
+
+    <br><br>
+
+    <div class="d-flex justify-content-around">
+      <div class="text-bg-dark p-3">Flex Item</div>
+      <div class="text-bg-dark p-3">Flex Item</div>
+      <div class="text-bg-dark p-3">Flex Item</div>
+    </div>
+
+    <br><br>
+
+    <div class="d-flex justify-content-between">
+      <div class="text-bg-dark p-3">Flex Item</div>
+      <div class="text-bg-dark p-3">Flex Item</div>
+      <div class="text-bg-dark p-3">Flex Item</div>
+    </div>
+
+    <br><br>
+
+    <!-- Align Items -->
+    <p class="h6">Flexbox Align Items</p>
+    <div class="d-flex flex-column align-items-end" style="height: 200px">
+      <div class="text-bg-light p-3">Flex Item</div>
+      <div class="text-bg-light p-3">Flex Item</div>
+      <div class="text-bg-light p-3">Flex Item</div>
+    </div>
+
+    <br>
+    <div class="d-flex flex-column align-items-center" style="height: 200px">
+      <div class="text-bg-light p-3">Flex Item</div>
+      <div class="text-bg-light p-3">Flex Item</div>
+      <div class="text-bg-light p-3">Flex Item</div>
+    </div>
+
+    <br>
+    <div class="d-flex flex-column align-items-start" style="height: 200px">
+      <div class="text-bg-light p-3">Flex Item</div>
+      <div class="text-bg-light p-3">Flex Item</div>
+      <div class="text-bg-light p-3">Flex Item</div>
+    </div>
+
+    <br><br>
+
+    <!-- Align Self -->
+    <p class="h6">Flexbox Align Self</p>
+    <div class="d-flex flex-column" style="height: 300px">
+      <div class="text-bg-primary p-3 align-self-center">Flex Center</div>
+      <div class="text-bg-primary p-3 align-self-end">Flex End</div>
+      <div class="text-bg-primary p-3 align-self-start">Flex Start</div>
+    </div>
+
+    <br><br>
+
+    <!-- Flex Grow -->
+    <p class="h6">Flexbox Flex Grow</p>
+    <div class="d-flex">
+      <div class="text-bg-primary p-3 flex-grow-1">Flex Grow</div>
+      <div class="text-bg-dark p-3">Flex Item</div>
+      <div class="text-bg-dark p-3">Flex Item</div>
+    </div>
+
+  </div>
+  <div class="my-5"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
