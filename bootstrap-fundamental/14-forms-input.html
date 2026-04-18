@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <title>Bootstrap Forms & Input</title>
+</head>
+
+<body>
+  <div class="containermd">
+    <h1 class="my-5">Forms & Input</h1>
+
+    <!-- Basic Form -->
+    <p class="h6">Basic Form</p>
+    <form action="" class="w-75">
+      <div class="my-1">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" />
+      </div>
+      <div class="my1">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" />
+      </div>
+      <div class="my-1">
+        <input type="checkbox" class="form-check-input" id="remember" />
+        <label for="remember" class="form-check-label">Remember me</label>
+      </div>
+      <input type="button" value="Login" class="btn btn-primary" />
+    </form>
+
+    <br><br>
+
+    <!-- Other Fields -->
+    <form class="w-75">
+      <!-- Select Fields -->
+      <p class="h6">Select Fields</p>
+      <div>
+        <select class="form-select">
+          <option value="">Current Stack</option>
+          <option value="morning">HTML</option>
+          <option value="afternoon">CSS</option>
+          <option value="evening">Bootstrap</option>
+        </select>
+      </div>
+      <br><br>
+
+      <!-- Textarea -->
+      <p class="h6">Textarea</p>
+      <div>
+        <textarea class="form-control" placeholder="Message"></textarea>
+      </div>
+      <br>
+
+      <!-- Size Classes -->
+      <p class="h6">Size Classes</p>
+      <input class="form-control form-control-lg my-1" type="text" placeholder="large input">
+      <input class="form-control my-1" type="text" placeholder="default input">
+      <input class="form-control form-control-sm my-1" type="text" placeholder="small input">
+      <br>
+
+      <!-- Switch -->
+      <p class="h6">Switch</p>
+      <div class="form-check form-switch">
+        <input type="checkbox" class="form-check-input" id="switch" />
+        <label class="form-check-label" for="switch">Switch</label>
+      </div>
+      <br>
+
+      <!-- Inline Checkboxes -->
+      <p class="h6">Inline Checkboxes</p>
+      <div class="my-1">
+        <div class="form-check-inline">
+          <input type="checkbox" class="form-check-inline mx-0" id="option1" />
+          <label for="option1" class="form-check-label">Option 1</label>
+        </div>
+        <div class="form-check-inline">
+          <input type="checkbox" class="form-check-inline mx-0" id="option2" />
+          <label for="option2" class="form-check-label">Option 2</label>
+        </div>
+        <div class="form-check-inline">
+          <input type="checkbox" class="form-check-inline mx-0" id="option3" />
+          <label for="option3" class="form-check-label">Option 3</label>
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Range -->
+      <p class="h6">Range Slider</p>
+      <div>
+        <label for="range" class="form-label"></label>
+        <input type="range" class="form-range" id="range" />
+      </div>
+
+      <!-- Range Steps -->
+      <div>
+        <label for="range" class="form-label"></label>
+        <input type="range" class="form-range" id="range" min="0" max="5" step="0.5" />
+      </div>
+
+    </form>
+
+    <br>
+
+    <!-- Input Groups -->
+    <p class="h6">Input Groups</p>
+    <form class="w-75">
+      <div class="input-group my-1">
+        <span class="input-group-text">@</span>
+        <input type="email" id="email" class="form-control" placeholder="Email address">
+      </div>
+    </form>
+    <br>
+
+    <form action="" class="w-75">
+      <div class="input-group">
+        <input type="text" name="" id="" class="form-control">
+        <button class="btn btn-outline-dark">Search</button>
+      </div>
+    </form>
+    <br>
+
+    <div class="w-75">
+      <!-- Datalist -->
+      <p class="h6">Datalist</p>
+      <label for="exampleDataList" class="form-label">Select Your Preferred Technology</label>
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+      <datalist id="datalistOptions">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="Bootstrap">
+        <option value="Tailwind CSS">
+        <option value="Foundation">
+      </datalist>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="my-5"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
