@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Bootstrap Cards</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="mb-5">Cards</h1>
+
+    <!-- Basic Text Card -->
+    <p class="h6">Basic Text Card</p>
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex illum incidunt, distinctio
+          sed modi corrupti itaque veniam eveniet laborum magni assumenda, quas voluptate sapiente temporibus sint
+          possimus repellendus consequuntur.</p>
+      </div>
+    </div>
+
+    <br><br>
+
+    <!-- Card With Image -->
+    <p class="h6">Card With Image</p>
+    <div class="card">
+      <img class="card-img-top" src="https://picsum.photos/399" alt="random image">
+      <div class="card-body">
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex illum incidunt, distinctio
+          sed modi corrupti
+          itaque veniam eveniet laborum magni assumenda, quas voluptate sapiente temporibus sint possimus repellendus
+          consequuntur.</p>
+      </div>
+    </div>
+
+    <br><br>
+
+    <!-- Header & Footer -->
+    <p class="h6">Card With Header & Footer</p>
+    <div class="card">
+      <div class="card-header">Card Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex illum incidunt, distinctio
+          sed modi corrupti
+          itaque veniam eveniet laborum magni assumenda, quas voluptate sapiente temporibus sint possimus repellendus
+          consequuntur.</p>
+      </div>
+      <div class="card-footer">Card Footer</div>
+    </div>
+
+    <br><br>
+
+    <!-- Grid Columns & Colors -->
+    <p class="h6">Card With Grid Columns & Colors</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card text-bg-danger my-1">
+          <div class="card-body">
+            <div class="card-title">Card Title</div>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex illum incidunt,
+              distinctio
+              sed modi corrupti
+              itaque veniam eveniet laborum magni assumenda, quas voluptate sapiente temporibus sint possimus
+              repellendus
+              consequuntur.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-bg-success my-2">
+          <div class="card-body">
+            <div class="card-title">Card Title</div>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex illum incidunt,
+              distinctio
+              sed modi corrupti
+              itaque veniam eveniet laborum magni assumenda, quas voluptate sapiente temporibus sint possimus
+              repellendus
+              consequuntur.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-bg-primary my-1">
+          <div class="card-body">
+            <div class="card-title">Card Title</div>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex illum incidunt,
+              distinctio
+              sed modi corrupti
+              itaque veniam eveniet laborum magni assumenda, quas voluptate sapiente temporibus sint possimus
+              repellendus
+              consequuntur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <!-- Card Group -->
+    <p class="h6">Card Group</p>
+    <div class="card-group">
+      <div class="card">
+        <img class="card-img-top" src="https://picsum.photos/512" alt="random image">
+        <div class="card-body">
+          <div class="card-title">Card Title</div>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex illum incidunt,
+            distinctio
+            sed modi corrupti
+            itaque veniam eveniet laborum magni assumenda, quas voluptate sapiente temporibus sint possimus
+            repellendus
+            consequuntur.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://picsum.photos/974" alt="random image">
+        <div class="card-body">
+          <div class="card-title">Card Title</div>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex illum incidunt,
+            distinctio
+            sed modi corrupti
+            itaque veniam eveniet laborum magni assumenda, quas voluptate sapiente temporibus sint possimus
+            repellendus
+            consequuntur.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://picsum.photos/337" alt="random image">
+        <div class="card-body">
+          <div class="card-title">Card Title</div>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex illum incidunt,
+            distinctio
+            sed modi corrupti
+            itaque veniam eveniet laborum magni assumenda, quas voluptate sapiente temporibus sint possimus
+            repellendus
+            consequuntur.</p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <!-- Placeholders -->
+    <p class="h6">Loading Placeholders</p>
+    <div class="card w-50">
+      <div class="card-body">
+        <h5 class="card-title placeholder-glow">
+          <span class="placeholder col-9 bg-primary"></span>
+        </h5>
+        <p class="card-text placeholder-glow">
+          <span class="placeholder col-4 bg-info"></span>
+          <span class="placeholder col-6 bg-secondary"></span>
+          <span class="placeholder col-7 bg-success"></span>
+          <span class="placeholder col-2 bg-warning"></span>
+          <span class="placeholder col-2 bg-dark"></span>
+        </p>
+        <a href="#" class="btn btn-primary disabled placeholder col-4"></a>
+      </div>
+
+    </div>
+
+    <div class="my-5"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
