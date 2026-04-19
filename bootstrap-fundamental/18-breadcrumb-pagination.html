@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <title>Bootstrap Breadcrumb & Pagination</title>
+</head>
+
+<body>
+  <div class="container w-75">
+    <h1 class="my-5">Breadcrumb & Pagination</h1>
+
+    <!-- Breadcrumb -->
+    <p class="h6">Basic Breadcrumb</p>
+    <nav aria-label="breadcrumb">
+      <ol>
+        <li class="breadcrumb">
+          <a href="#" class="breadcrumb-item">Home</a>
+          <a href="#" class="breadcrumb-item">About</a>
+          <a href="#" class="breadcrumb-item active" aria-current="page">Contact</a>
+        </li>
+      </ol>
+    </nav>
+
+    <br /><br />
+
+    <!-- Dividers -->
+    <p class="h6">Breadcrumb Dividers</p>
+    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider:'>'">
+      <ol>
+        <li class="breadcrumb">
+          <a href="#" class="breadcrumb-item">Home</a>
+          <a href="#" class="breadcrumb-item">About</a>
+          <a href="#" class="breadcrumb-item active" aria-current="page">Contact</a>
+        </li>
+      </ol>
+    </nav>
+
+    <br /><br />
+
+    <!-- Pagination -->
+    <p class="h6">Basic Pagination</p>
+    <nav>
+      <ul class="pagination">
+        <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item active"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+      </ul>
+    </nav>
+
+    <br /><br />
+
+    <!-- Active & Disabled States -->
+    <p class="h6">Basic Pagination</p>
+    <nav>
+      <ul class="pagination">
+        <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+        <li class="page-item active"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+      </ul>
+    </nav>
+
+
+    <br /><br />
+
+    <!-- Sizing -->
+    <p class="h6">Pagination Sizing</p>
+    <nav>
+      <ul class="pagination pagination-sm">
+        <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item active"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul class="pagination pagination-lg">
+        <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item active"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+      </ul>
+    </nav>
+
+    <br /><br />
+
+    <!-- Alignment -->
+    <p class="h6">Pagination Alignment</p>
+    <nav>
+      <ul class="pagination pagination-sm justify-content-center">
+        <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item active"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul class="pagination pagination-lg justify-content-end bg">
+        <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item active"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+      </ul>
+    </nav>
+
+  </div>
+  <div class="my-5"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
