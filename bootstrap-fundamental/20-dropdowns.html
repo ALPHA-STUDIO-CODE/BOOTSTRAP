@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <title>Bootstrap Dropdowns</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="my-5">Dropdowns</h1>
+
+    <!-- Single Button -->
+    <p class="h6">Simple Dropdown</p>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Technology</button>
+      <ul class="dropdown-menu">
+        <li><a href="" class="dropdown-item">HTML</a></li>
+        <li><a href="" class="dropdown-item">CSS</a></li>
+        <li><a href="" class="dropdown-item">Bootstrap</a></li>
+      </ul>
+    </div>
+
+    <br><br>
+
+    <!-- Split Button -->
+    <p class="h6">Split Button Dropdown</p>
+    <div class="btn-group">
+      <button class="btn btn-warning">Technology</button>
+      <button class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="" class="dropdown-item">HTML</a></li>
+        <li><a href="" class="dropdown-item">CSS</a></li>
+        <li><a href="" class="dropdown-item">Bootstrap</a></li>
+      </ul>
+    </div>
+
+    <br><br>
+
+    <!-- Dark Dropdowns -->
+    <p class="h6">Dark Dropdown</p>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Technology</button>
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li><a href="" class="dropdown-item">HTML</a></li>
+        <li><a href="" class="dropdown-item">CSS</a></li>
+        <li><a href="" class="dropdown-item">Bootstrap</a></li>
+      </ul>
+    </div>
+
+    <br><br>
+
+    <!-- Dropup -->
+    <p class="h6">Dropup</p>
+    <div class="btn-group dropup">
+      <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Technology</button>
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li><a href="" class="dropdown-item">HTML</a></li>
+        <li><a href="" class="dropdown-item">CSS</a></li>
+        <li><a href="" class="dropdown-item">Bootstrap</a></li>
+      </ul>
+    </div>
+
+    <br><br>
+
+    <!-- Navbar with Dropdown -->
+    <p class="h6">Navbar with Dropdown</p>
+    <nav class="navbar navbar-expand-md bg-primary">
+      <div class="container-md">
+        <a href="https://github.com/ALPHA-STUDIO-CODE" class="navbar-brand ">Alpha Studio Code</a>
+        <button type="button" data-bs-target="#navbarNav" data-bs-toggle="collapse" class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="https://github.com/ALPHA-STUDIO-CODE" class="nav-link">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://x.com/ALPHASTUDIOCODE" class="nav-link">X/Twitter</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.frontendmentor.io/profile/ALPHA-STUDIO-CODE" class="nav-link">Frontend Mentor</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a href="" class="dropdown-item">HTML</a></li>
+                <li><a href="" class="dropdown-item">CSS</a></li>
+                <li><a href="" class="dropdown-item">Bootstrap</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  <div class="my-5"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
