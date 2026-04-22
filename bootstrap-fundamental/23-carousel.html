@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Bootstrap Carousel</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-primary sticky-top">
+    <div class="container-md">
+      <a href="https://github.com/ALPHA-STUDIO-CODE" class="navbar-brand ">Alpha Studio Code</a>
+      <button type="button" data-bs-target="#navbarNav" data-bs-toggle="collapse" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="https://github.com/ALPHA-STUDIO-CODE" class="nav-link">GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://x.com/ALPHASTUDIOCODE" class="nav-link">X/Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.frontendmentor.io/profile/ALPHA-STUDIO-CODE" class="nav-link">Frontend Mentor</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">Toggle Theme</a>
+            <div class="dropdown-menu p-3">
+              <p class="btn btn-dark w-100 m-0 mb-3" data-bs-theme-value="dark">Dark Theme</p>
+              <p class="btn btn-light w-100 m-0" data-bs-theme-value="light">light Theme</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="my-5">Carousel</h1>
+
+    <!-- Carousel -->
+
+    <div class="carousel slide" id="slider">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/399" alt="random text" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Alpha Photos Studio</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/349" alt="random text" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Alpha Photo Lab</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/499" alt="random text" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Alpha Visual Studio</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/473" alt="random text" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Alpha Capture</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Control-->
+      <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+    <div class=" my-5">
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/darkmodetoggle.js"></script>
+</body>
+
+</html>
