@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <title>Bootstrap Toasts</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md bg-primary sticky-top">
+      <div class="container-md">
+        <a href="https://github.com/ALPHA-STUDIO-CODE" class="navbar-brand"
+          >Alpha Studio Code</a
+        >
+        <button
+          type="button"
+          data-bs-target="#navbarNav"
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="https://github.com/ALPHA-STUDIO-CODE" class="nav-link"
+                >GitHub</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="https://x.com/ALPHASTUDIOCODE" class="nav-link"
+                >X/Twitter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://www.frontendmentor.io/profile/ALPHA-STUDIO-CODE"
+                class="nav-link"
+                >Frontend Mentor</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href=""
+                class="dropdown-toggle nav-link"
+                data-bs-toggle="dropdown"
+                >Toggle Theme</a
+              >
+              <div class="dropdown-menu p-3">
+                <p
+                  class="btn btn-dark w-100 m-0 mb-3"
+                  data-bs-theme-value="dark"
+                >
+                  Dark Theme
+                </p>
+                <p class="btn btn-light w-100 m-0" data-bs-theme-value="light">
+                  light Theme
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="my-5">Toasts</h1>
+
+      <button id="toastBtn" class="btn btn-primary">Show Toast</button>
+
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast text-bg-success" id="toastNot">
+          <div class="toast-header">
+            <div class="me-auto h6">Notification Heading</div>
+            <small>Just Now</small>
+          </div>
+          <div class="toast-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque nam
+            quod obcaecati consectetur exercitationem, ullam molestiae,
+            reprehenderit rerum eum officia mollitia pariatur deleniti quidem
+            sequi! Eligendi aliquid saepe minus optio.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-5"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/darkmodetoggle.js"></script>
+    <script>
+      const toastTrigger = document.querySelector("#toastBtn");
+      const toast = document.querySelector("#toastNot");
+
+      if (toastTrigger && toast) {
+        toastTrigger.addEventListener("click", () => {
+          const bsToast = new bootstrap.Toast(toast);
+          bsToast.show();
+        });
+      }
+    </script>
+  </body>
+</html>
