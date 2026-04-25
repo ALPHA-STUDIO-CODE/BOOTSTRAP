@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>Bootstrap Spinners</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md bg-primary sticky-top">
+      <div class="container-md">
+        <a href="https://github.com/ALPHA-STUDIO-CODE" class="navbar-brand"
+          >Alpha Studio Code</a
+        >
+        <button
+          type="button"
+          data-bs-target="#navbarNav"
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="https://github.com/ALPHA-STUDIO-CODE" class="nav-link"
+                >GitHub</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="https://x.com/ALPHASTUDIOCODE" class="nav-link"
+                >X/Twitter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://www.frontendmentor.io/profile/ALPHA-STUDIO-CODE"
+                class="nav-link"
+                >Frontend Mentor</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href=""
+                class="dropdown-toggle nav-link"
+                data-bs-toggle="dropdown"
+                >Toggle Theme</a
+              >
+              <div class="dropdown-menu p-3">
+                <p
+                  class="btn btn-dark w-100 m-0 mb-3"
+                  data-bs-theme-value="dark"
+                >
+                  Dark Theme
+                </p>
+                <p class="btn btn-light w-100 m-0" data-bs-theme-value="light">
+                  light Theme
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="my-5">Spinners</h1>
+
+      <!-- Border Spinner -->
+      <div class="spinner-border">
+        <span class="visually-hidden"></span>
+      </div>
+
+      <br /><br />
+
+      <!-- Colors -->
+      <div class="spinner-border text-primary">
+        <span class="visually-hidden"></span>
+      </div>
+      <div class="spinner-border text-secondary">
+        <span class="visually-hidden"></span>
+      </div>
+      <div class="spinner-border text-success">
+        <span class="visually-hidden"></span>
+      </div>
+      <div class="spinner-border text-danger">
+        <span class="visually-hidden"></span>
+      </div>
+      <div class="spinner-border text-dark">
+        <span class="visually-hidden"></span>
+      </div>
+      <div class="spinner-border text-light">
+        <span class="visually-hidden"></span>
+      </div>
+      <div class="spinner-border text-info">
+        <span class="visually-hidden"></span>
+      </div>
+
+      <br /><br />
+
+      <!-- Growing Spinner -->
+      <div class="spinner-grow text-success">
+        <span class="visually-hidden"></span>
+      </div>
+
+      <br /><br />
+
+      <!-- Align Center -->
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border text-primary">
+          <span class="visually-hidden"></span>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <!-- Size -->
+      <div class="d-flex justify-content-center">
+        <div class="spinner-grow spinner-grow-sm text-success">
+          <span class="visually-hidden"></span>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-end">
+        <div
+          class="spinner-border spinner-border-sm text-warning"
+          style="height: 4rem; width: 4rem"
+        >
+          <span class="visually-hidden"></span>
+        </div>
+      </div>
+      <br /><br />
+
+      <!-- In Buttons -->
+      <button class="btn btn-success">
+        <span class="spinner-grow spinner-grow-sm"></span>
+        Loading...
+      </button>
+    </div>
+
+    <div class="my-5"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/darkmodetoggle.js"></script>
+  </body>
+</html>
